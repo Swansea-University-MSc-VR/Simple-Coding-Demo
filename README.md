@@ -37,7 +37,7 @@ This project is built using Unity version 2022.3.10f1 with a Universal Render Pi
 
 **Screenshots:**
 
-![Main Scene](link-to-your-screenshot)
+![Main Scene](https://github.com/virtualosus/Cube-Coding-Demo/blob/master/GitHub%20Screenshots/MainScene.png)
 
 **License:**
 
