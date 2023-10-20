@@ -42,9 +42,3 @@ This project is built using Unity version 2022.3.10f1 with a Universal Render Pi
 **License:**
 
 No license is required for this project. Feel free to use, modify, and distribute it as needed.
-
----
-
-Please replace `"link-to-your-screenshot"` with the actual link to your screenshot image.
-
-Feel free to modify and customize the README further to better suit your needs. If you have any additional information or specific requirements you'd like to add, please let me know!
