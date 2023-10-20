@@ -2,7 +2,7 @@
 
 **Description:**
 
-Cube Coding Demo is a Unity project designed to help teach fundamental Unity concepts to students. This demo focuses on keyboard control of a game object, using variables to manage score and health values, and displaying them both in the console and with UI elements such as Text Mesh Pro and sliders.
+Simple Coding Demo is a Unity project designed to help teach fundamental Unity concepts to students. This demo focuses on keyboard control of a game object, using variables to manage score and health values, and displaying them both in the console and with UI elements such as Text Mesh Pro and sliders.
 
 **Features:**
 
