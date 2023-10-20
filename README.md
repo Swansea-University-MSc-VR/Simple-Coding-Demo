@@ -1,4 +1,4 @@
-# Cube Coding Demo
+# Simple Coding Demo
 
 **Description:**
 
