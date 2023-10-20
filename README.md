@@ -1,8 +1,8 @@
-# Cube Coding Demo
+# Simple Coding Demo
 
 **Description:**
 
-Cube Coding Demo is a Unity project designed to help teach fundamental Unity concepts to students. This demo focuses on keyboard control of a game object, using variables to manage score and health values, and displaying them both in the console and with UI elements such as Text Mesh Pro and sliders.
+Simple Coding Demo is a Unity project designed to help teach fundamental Unity concepts to students. This demo focuses on keyboard control of a game object, using variables to manage score and health values, and displaying them both in the console and with UI elements such as Text Mesh Pro and sliders.
 
 **Features:**
 
@@ -37,14 +37,8 @@ This project is built using Unity version 2022.3.10f1 with a Universal Render Pi
 
 **Screenshots:**
 
-![Main Scene](link-to-your-screenshot)
+![Main Scene](https://github.com/virtualosus/Cube-Coding-Demo/blob/master/GitHub%20Screenshots/MainScene.png)
 
 **License:**
 
 No license is required for this project. Feel free to use, modify, and distribute it as needed.
-
----
-
-Please replace `"link-to-your-screenshot"` with the actual link to your screenshot image.
-
-Feel free to modify and customize the README further to better suit your needs. If you have any additional information or specific requirements you'd like to add, please let me know!
