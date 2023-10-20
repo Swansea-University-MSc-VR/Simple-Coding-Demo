@@ -2,14 +2,16 @@
 
 **Description:**
 
-Simple Coding Demo is a Unity project designed to help teach fundamental Unity concepts to students. This demo focuses on keyboard control of a game object, using variables to manage score and health values, and displaying them both in the console and with UI elements such as Text Mesh Pro and sliders.
+Simple Coding Demo is a Unity project designed to teach fundamental Unity concepts to students. The project includes player movement, health management, scoring, and interaction with game objects. Players can control an object's movement using keyboard input, collect items to increase their score, and avoid enemies to maintain their health. The project incorporates key Unity features, such as player input, object interaction, health management, and UI integration.
 
 **Features:**
 
-- Keyboard control of a game object
-- Use of variables to manage score and health values
-- Displaying score and health values in the console
-- UI elements using Text Mesh Pro and sliders
+- Player movement controlled by keyboard input (up, down, left, right arrows).
+- Health management system with adjustable maximum health (playerMaxHealth) and current health (playerCurrentHealth). Health is displayed using TextMeshPro (healthText) and a UI slider (healthSlider). Health text and slider fill color change based on health percentage.
+- Score management system with a totalScore variable. The score is displayed using TextMeshPro (scoreText).
+- Game objects interaction:
+    - BonusItem script allows players to collect items, increasing their score upon collision.
+    - EnemyController script reduces the player's health when colliding with an enemy object (damageValue).
 
 **Installation:**
 
