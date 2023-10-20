@@ -4,32 +4,34 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public PlayerHealth playerHealthScript;         //reference to our player health script
+    // Reference to the player's health script.
+    public PlayerHealth playerHealthScript;
 
-    public float damageValue;                       //creates a variable to carry our damage value
-
+    // Damage value to subtract from the player's health.
+    public float damageValue;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerHealthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();        //find the gameobject with the tag ("Player") and get the component we are looking for
+        // Find the GameObject with the tag "Player" and get the PlayerHealth component.
+        playerHealthScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
-    // Update is called once per frame
-    void Update()
+    // OnTriggerEnter is called when another collider enters this object's trigger collider.
+    public void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    public void OnTriggerEnter(Collider other)                                                                  //when an object collides with our trigger
-    {
-        if(other.tag == "Player")                                                                            //if the other collider has tag == "PlayerTag"...
+        // Check if the colliding object has the tag "Player".
+        if (other.tag == "Player")
         {
-            playerHealthScript.playerCurrentHealth = playerHealthScript.playerCurrentHealth - damageValue;      //remoce health from our player health script by damage value
-            Debug.Log("The players current health is " + playerHealthScript.playerCurrentHealth);               //debug log out the current player health
+            // Subtract damageValue from the player's current health.
+            playerHealthScript.playerCurrentHealth -= damageValue;
+
+            // Log the player's current health to the console for debugging.
+            Debug.Log("The player's current health is " + playerHealthScript.playerCurrentHealth);
         }
         else
         {
+            // If the colliding object is not the player, log an error message for debugging.
             Debug.LogError("NOT THE PLAYER");
         }
     }

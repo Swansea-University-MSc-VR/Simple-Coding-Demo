@@ -4,33 +4,44 @@ using UnityEngine;
 
 public class KeyboardPlayerMovement : MonoBehaviour
 {
-    public GameObject playerGameObject;             //a public reference for our player object
+    // Public reference to the player GameObject.
+    public GameObject playerGameObject;
 
-    public float turnSpeed;                         //creates a floating point variable to control turn speed
-    public float movementSpeed;                     //creates a floating point variable to control movement speed
+    // Variable to control turn speed.
+    public float turnSpeed;
 
+    // Variable to control movement speed.
+    public float movementSpeed;
 
     // Update is called once per frame  
     void Update()
     {
-        if (Input.GetKey(KeyCode.UpArrow))                                                              //when up key os pressed...
+        // Check if the Up Arrow key is pressed.
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            playerGameObject.transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);     //this object move forward
+            // Move the player object forward.
+            playerGameObject.transform.Translate(Vector3.forward * Time.deltaTime * movementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))                                                            //when down key is pressed...
+        // Check if the Down Arrow key is pressed.
+        if (Input.GetKey(KeyCode.DownArrow))
         {
-            playerGameObject.transform.Translate(Vector3.back * Time.deltaTime * movementSpeed);        //this object move back
+            // Move the player object backward.
+            playerGameObject.transform.Translate(Vector3.back * Time.deltaTime * movementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))                                                            //when left key is pressed...
+        // Check if the Left Arrow key is pressed.
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            playerGameObject.transform.Rotate(Vector3.up, -turnSpeed);                                  //rotate left
+            // Rotate the player object to the left.
+            playerGameObject.transform.Rotate(Vector3.up, -turnSpeed);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))                                                           //when right key is pressed...
+        // Check if the Right Arrow key is pressed.
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            playerGameObject.transform.Rotate(Vector3.up, turnSpeed);                                   //rotate to the right
-        }        
+            // Rotate the player object to the right.
+            playerGameObject.transform.Rotate(Vector3.up, turnSpeed);
+        }
     }
 }
