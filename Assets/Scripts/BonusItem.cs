@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BonusItem : MonoBehaviour
@@ -15,6 +16,7 @@ public class BonusItem : MonoBehaviour
     {
         // Find and assign the ScoreHolder component of the GameObject with the "Player" tag.
         scoreHolder = GameObject.FindGameObjectWithTag("Player").GetComponent<ScoreHolder>();
+
     }
 
     // OnTriggerEnter is called when the Collider other enters the trigger collider of this GameObject.
@@ -25,6 +27,7 @@ public class BonusItem : MonoBehaviour
         {
             // Add the bonusAmount to the player's total score.
             scoreHolder.totalScore += bonusAmount;
+
 
             // Log the player's updated score to the console for debugging purposes.
             Debug.Log("Player's current score is: " + scoreHolder.totalScore);
